@@ -1,0 +1,28 @@
+
+#doska { 
+    /* создаю стиль для дива с id */
+
+    width: 160px;
+    height: 160px;
+    align-items: center;
+    margin: 100px 100px;
+    border: 3px solid #000;
+}
+
+
+.kvadrat {
+    /* создаю класс с параметрами */
+    width: 20px;
+    height: 20PX;
+    float: left;
+}
+
+.black {
+    /* создаю класс с параметрами */
+    background: #000;
+}
+
+.white {
+    /* создаю класс с параметрами */
+    background: #fff;
+}
