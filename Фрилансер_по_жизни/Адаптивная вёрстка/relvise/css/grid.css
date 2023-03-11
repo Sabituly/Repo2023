@@ -1,0 +1,144 @@
+.grid_page {
+
+
+    margin: 20px 0;
+
+}
+
+.page_grid h2 {
+
+
+    text-align: center;
+
+}
+
+
+.grid-cards {
+
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, minmax(200px, 260px));
+    grid-template-rows: repeat(4, 180px);
+
+    grid-template-areas:
+        "sale1 sale1 product1 product2"
+        "sale2 sale2 product1 product2"
+        "product3 product4 sale3 sale3"
+        "product3 product4 sale4 sale4";
+
+}
+
+.card-grid {
+
+    text-align: center;
+    justify-content: center;
+    background-color: #c9965b;
+
+}
+
+@media (max-width: 1200px) {
+
+    .grid-cards {
+
+        grid-template-columns: repeat(2, minmax(180px, 260px));
+        grid-template-rows: repeat(8, 180px);
+        grid-template-areas:
+            "sale1 sale1"
+            "sale2 sale2"
+            "product1 product2"
+            "product1 product2"
+            "sale3 sale3"
+            "sale4 sale4"
+            "product3 product4"
+            "product3 product4";
+    }
+}
+
+@media (max-width: 570px) {
+
+    .grid-cards {
+
+
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, 140px);
+        grid-auto-rows: 300px;
+
+        grid-template-areas:
+            "sale1"
+            "sale2"
+            "product1"
+            "product1"
+            "product2"
+            "product2"
+            "sale3"
+            "sale4"
+            "product3"
+            "product3"
+            "product4"
+            "product4";
+    }
+}
+
+.sale-1 {
+
+
+    grid-area: sale1;
+    background-image: url("/img/Ourgoals/hi1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.sale-2 {
+
+    grid-area: sale2;
+    background-image: url("/img/Ourgoals/hi2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sale-3 {
+    grid-area: sale3;
+    background-image: url("/img/Ourgoals/hi3.jpg");
+    background-size: cover;
+
+}
+
+.sale-4 {
+    grid-area: sale4;
+    background-image: url("/img/Ourgoals/hi4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.product-1 {
+
+    grid-area: product1;
+    background-image: url("/img/Ourgoals/hi4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product-2 {
+    grid-area: product2;
+    background-image: url("/img/Ourgoals/vi1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.product-3 {
+    grid-area: product3;
+    background-image: url("/img/Ourgoals/vi2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product-4 {
+    grid-area: product4;
+    background-image: url("/img/Ourgoals/vi3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
